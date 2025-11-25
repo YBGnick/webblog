@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/visitor');
+/* done */
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+   font-family: 'Visitor TT2 BRK', sans-serif;
+   font-size: 16px;
+}
+
+#sky {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px white;
+  cursor: pointer;
+
+    animation: twinkle 4s infinite ease-in-out;
+}
+
+
+@keyframes twinkle {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 8000;
+}
+
+#info-card {
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: none;
+  pointer-events: none;
+  font-size: 14px;
+  max-width: 200px;
+}
+
+#info-card img {
+  max-width: 175px;
+}
+#index-card {
+  z-index: 9999;
+  position: absolute;
+  color: white;
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 35%;
+  height: 85%;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 1px solid white;
+
+}
